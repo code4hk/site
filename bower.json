@@ -1,0 +1,11 @@
+{
+	"name" : "code4hkweb",
+	"version" : "0.1.0",
+	"ignore" : [ "libs/" ],
+	"dependencies": {
+		"angular" : null,
+		"requirejs-domready": null,
+		"requirejs": null
+	}
+}
+
