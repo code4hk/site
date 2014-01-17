@@ -1,11 +1,20 @@
 {
 	"name" : "code4hkweb",
 	"version" : "0.1.0",
-	"ignore" : [ "libs/" ],
+	"ignore" : [ 
+		"libs/",
+		"**/.*", 
+		"node_modules",
+		"test",
+		"tests"
+	],
 	"dependencies": {
 		"angular" : null,
-		"requirejs-domready": null,
-		"requirejs": null
+		"angular-scenario": "~1.2.1",
+		"angular-route": "~1.2.1",
+		"angular-mocks": "~1.2.1",
+		"requirejs": "~2.1.9",
+		"requirejs-text": "~2.0.10"
 	}
 }
 
