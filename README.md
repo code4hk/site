@@ -21,9 +21,7 @@ Installation Guide
 
 [gulp website](https://github.com/gulpjs/gulp)
 
-    npm install -g gulp
     git clone git@github.com:code4hk/site.git
     cd site
-    npm install --save-dev gulp gulp-util
-    bower install
     npm install
+    bower install
