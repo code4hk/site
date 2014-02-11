@@ -2,7 +2,7 @@
 	"name" : "code4hkweb",
 	"version" : "0.1.0",
 	"ignore" : [ 
-		"libs/",
+		"app/lib/",
 		"**/.*", 
 		"node_modules",
 		"test",
@@ -10,11 +10,12 @@
 	],
 	"dependencies": {
 		"angular" : null,
-		"angular-scenario": "~1.2.1",
-		"angular-route": "~1.2.1",
-		"angular-mocks": "~1.2.1",
-		"requirejs": "~2.1.9",
-		"requirejs-text": "~2.0.10"
+		"angular-scenario": "1.2.*",
+		"angular-route": "1.2.*",
+		"angular-mocks": "1.2.*",
+
+        "angular-ui-utils": "0.1.*"
+
 	}
 }
 

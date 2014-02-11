@@ -1,19 +1,31 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="myApp">
 	<head>
 		<title>Code4HK: We improve Hong Kong by coding.</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<link rel="stylesheet" type="text/css" media="all" href="app/css/app.css" />
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
 	</head>
 	<body >
 		<header>
-            Code4HK: the platform for social initiative in Hong Kong
+            <img src="" alt="code4hk logo"/>
+            Code4HK: the platform for social initiatives in Hong Kong
 		</header>
+        
         <footer>
             &copy; 2014 All right reserved code4HK
         </footer>
-        
-		<script data-main="js/main" src="/libs/requirejs/require.js"></script>		
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular-route/angular-route.js"></script>
+        <script src="lib/angular-mocks/angular-mocks.js"></script>
+        <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+        <script src="lib/angular-ui-utils/ui-utils.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/filters.js"></script>
+        <script src="js/directives.js"></script>
 	</body>
 </html>
