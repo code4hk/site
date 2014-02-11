@@ -6,5 +6,5 @@ Thumbs.db
 
 ## General
 logs/*
-libs/
+app/lib/
 node_modules/
