@@ -5,6 +5,8 @@ var watch = require('gulp-watch');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
 var livereload = require('gulp-livereload');
+var concat = require('gulp-concat');
+var less = require('gulp-less');
 
 server = lr();
 
@@ -12,9 +14,15 @@ gulp.task('default', function(){
   // place code for your default task here
 });
 
-gulp.task('reload', ['listen'], function() {
-    gulp.src('app/*.html')
+gulp.task('default', ['listen'], function() {
+    gulp.src('app/*')
         .pipe(watch())
+        .pipe(livereload(server));
+     
+    gulp.src('less/*.less')
+        .pipe(watch())
+        .pipe(less())
+        .pipe(gulp.dest('app/css/'))
         .pipe(livereload(server));
 });
 
