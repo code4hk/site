@@ -1,0 +1,3 @@
+[submodule "deploy/salt-nvm"]
+	path = deploy/salt-nvm
+	url = /Users/lauchunyinvincent/dropbox/code4hk/salt-nvm/
