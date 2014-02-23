@@ -1,1 +1,10 @@
-libs/
+## MAC OS X
+.DS_Store
+
+## Windows
+Thumbs.db
+
+## General
+logs/*
+app/lib/
+node_modules/
