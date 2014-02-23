@@ -4,8 +4,16 @@ code4hksite_up:
     - cwd: {{ pillar['app_path'] }}/app
     - user: code4hksite
   require:
+    - cmd: code4hksite_gulp_build
+
+code4hksite_gulp_build:
+  cmd.run:
+    - name:  gulp build
+    - cwd: {{ pillar['app_path'] }}
+    - user: code4hksite
+  require:
     - git: https://github.com/code4hk/site.git
-    - nvm: node_use
+    - nvm: node_use    
   #   - cmd: mabogo_build_npm
 
 
