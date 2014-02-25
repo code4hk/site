@@ -1,33 +1,60 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang='en' ng-app='myApp'>
 	<head>
 		<title>Code4HK: We improve Hong Kong by coding.</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-		<link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
+        <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css'>
+		<link rel='stylesheet' type='text/css' media='all' href='css/app.css' />
 	</head>
 	<body >
 		<header>
-            <img id="logo" src="img/logo.png" alt="code4hk logo"/>
-            <h1>
-            The platform for social initiatives in Hong Kong
-            </h1>
+            <img id='logo' src='img/logo.png' alt='code4hk logo'/>
+            <nav><a href='#projects'>Projects</a></nav>
 		</header>
-        
+        <img src='img/splash.jpg' id='splash'/>
+        <h1><i>
+        Drive social changes by code
+        </i></h1>
+        <div id='content'>
+            <div id='whole'>
+                <div id='left'>
+                    <div id='liveStream'>
+                        <a name='liveStream'></a>
+                        <h2>ACTIVITIES</h2>
+                    </div>
+                </div>
+                <div id='right'>
+                    <div id='projects'>
+                        <a name='projects'></a>
+                        <h2>PROJECTS INVOLVED</h2>
+                        <div class='projectName'><h3><strong>Code4HK website</strong></h3></div>
+                        <div class='projectTagline'>Know everything about Code4HK</div>
+                        <div class='projectStatus'>Last Updated: 2014-01-12 4 contributors Live</div>
+                        <div class='projectDescription'>Start, contribute, update and share projects. Also learn most of the most updated activities of Code4HK here! Tavern of our crew in the internet.</div>
+                    </div>
+                    <div id='contributors'>
+                        <a name='contributors'></a>
+                        <h2>CONTRIBUTORS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
+            <div id='copyright'>
             &copy; 2014 All right reserved code4HK
+            </div>
         </footer>
-        <script src="lib/angular/angular.js"></script>
-        <script src="lib/angular-route/angular-route.js"></script>
-        <script src="lib/angular-mocks/angular-mocks.js"></script>
-        <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
-        <script src="lib/angular-ui-utils/ui-utils.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/services.js"></script>
-        <script src="js/controllers.js"></script>
-        <script src="js/filters.js"></script>
-        <script src="js/directives.js"></script>
+        <script src='lib/angular/angular.js'></script>
+        <script src='lib/angular-route/angular-route.js'></script>
+        <script src='lib/angular-mocks/angular-mocks.js'></script>
+        <script src='lib/angular-bootstrap/ui-bootstrap.js'></script>
+        <script src='lib/angular-ui-utils/ui-utils.js'></script>
+        <script src='js/app.js'></script>
+        <script src='js/services.js'></script>
+        <script src='js/controllers.js'></script>
+        <script src='js/filters.js'></script>
+        <script src='js/directives.js'></script>
 	</body>
 </html>
