@@ -13,15 +13,14 @@ http://docs.saltstack.com/topics/installation/index.html
 
 - Create soft links to customized modules / move custom modules there
 
-
-##Copy pillar/packages.sls to /srv/pillar/
-
-
-
+- Copy pillar/packages.sls to /srv/pillar/
 
 ##install with salt
 salt-call --local state.highstate -l debug
 
+##start Server
+Currently auto-start failing, run 
+run `nohup node scripts/web-server.js &` under  /home/code4hksite/site
 
 ##Testing particular salt (with custom modules installed in state.highstate)
 salt-call --local state.sls app_site test=True 

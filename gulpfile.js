@@ -7,7 +7,6 @@ var imagemin = require('gulp-imagemin');
 var livereload = require('gulp-livereload');
 var concat = require('gulp-concat');
 var less = require('gulp-less');
-
 var bower = require('gulp-bower');
 
 server = lr();
