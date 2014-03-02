@@ -7,18 +7,29 @@ var imagemin = require('gulp-imagemin');
 var livereload = require('gulp-livereload');
 var concat = require('gulp-concat');
 var less = require('gulp-less');
+var bower = require('gulp-bower');
 
 server = lr();
 
-gulp.task('default', function(){
-  // place code for your default task here
+gulp.task('bower', function() {
+
+    bower()
+        .pipe(gulp.dest('app/lib/'));
+
+});
+gulp.task('build', ['bower'], function() {
+    gulp.src('less/*.less')
+        .pipe(watch())
+        .pipe(less())
+        .pipe(gulp.dest('app/css/'));
+
 });
 
 gulp.task('default', ['listen'], function() {
     gulp.src('app/*')
         .pipe(watch())
         .pipe(livereload(server));
-     
+
     gulp.src('less/*.less')
         .pipe(watch())
         .pipe(less())
