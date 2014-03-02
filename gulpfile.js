@@ -19,7 +19,6 @@ gulp.task('bower', function() {
 });
 gulp.task('build', ['bower'], function() {
     gulp.src('less/*.less')
-        .pipe(watch())
         .pipe(less())
         .pipe(gulp.dest('app/css/'));
 
