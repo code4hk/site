@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="site">
 <head>
   <title>Code4HK: We improve Hong Kong by coding.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,11 +30,30 @@
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_77729b9eb386bf0c6f7991e88_e8ff6c5d8e" value=""></div>
   <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+
+
+
+
+
 </form>
 </div>
 
+
 <!--End mc_embed_signup-->
 
+</section>
+<hr />
+<section class="container-fluid blog-section">
+
+    <div class="clear"><a href="//blog.code4.hk/hackathon/2013/12/01/code-for-hk/" class="btn btn-primary btn-lg blog-button" role="button">Our Blog</a></div>
+</section>
+
+
+<hr />
+<section>
+  <div ng-controller="lifestreamCtrl">
+      <lifestream config="lifestreamConfig"></lifestream>
+  </div>
 </section>
 <footer>
     <!-- &copy; 2014 All right reserved code4HK -->
@@ -49,5 +68,9 @@
 <script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
+
+
+<script src="lib/angular-lifestream/dist/scripts/angular-lifestream.min.js"></script>
+<!-- /Users/lauchunyinvincent/Dropbox/code4hk/site/ -->
 </body>
 </html>

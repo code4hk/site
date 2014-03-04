@@ -24,7 +24,7 @@ gulp.task('build', ['bower'], function() {
 
 });
 
-gulp.task('default', ['listen'], function() {
+gulp.task('default', ['bower','listen'], function() {
     gulp.src('app/*')
         .pipe(watch())
         .pipe(livereload(server));
