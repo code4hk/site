@@ -1,7 +1,18 @@
 @white: #FFFFFF;
 @green: #33ff33;
 
+#forkongithub {
+    z-index:2;
+}
+
 header {
+    
+    width: 100%;
+    z-index:1;
+    position: fixed;
+    top:0px;
+    background: @white;
+
     h1 {
         font-size:1.3em;
         width: 40%;
@@ -15,18 +26,19 @@ header {
         min-width: 218.8px;
         max-width: 547px;
     }
-    
-    width: 100%;
-    z-index:100;
-    position: fixed;
-    background: @white;
-
     nav {
         width: 100%;
-        a {
-            text-align: center;
-            margin:0 auto;
-            display:inline-block;
+        ul {
+            list-style:none;
+            padding:0;
+            li {
+                width:19%;
+                display:inline-block;
+                text-align: center;
+                margin:0 auto;
+                a {
+                }
+            }
         }
     }
 }
