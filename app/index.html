@@ -1,17 +1,44 @@
 <!doctype html>
-<html lang='en' ng-app='myApp'>
-	<head>
-		<title>Code4HK: We improve Hong Kong by coding.</title>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<html lang="en" ng-app="myApp">
+<head>
+  <title>Code4HK: We improve Hong Kong by coding.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css'>
-        <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css'>
-		<link rel='stylesheet' type='text/css' media='all' href='css/app.css' />
-	</head>
-	<body >
-		<header>
-            <img id='logo' src='img/logo.png' alt='code4hk logo'/>
-            <nav>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
+    <style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1.2rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#060;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;}#forkongithub a{width:200px;position:absolute;top:4em;left:-4em;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
+</head>
+<body >
+    <span style="" id="forkongithub"><a href="http://www.code4.hk"> Code for Hong Kong </a></span>
+ <header>
+    <img id="logo" src="img/logo.png" alt="code4hk logo"/>
+    <h1>The platform for social initiatives in Hong Kong</h1>
+                <nav><a href='#projects'>Projects</a></nav>
+</header>
+<hr />
+<section class="container-fluid subscribe-section" >
+  <!-- Begin MailChimp Signup Form -->
+<style type="text/css">
+  #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+  /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+     We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="http://code4.us3.list-manage1.com/subscribe/post?u=77729b9eb386bf0c6f7991e88&amp;id=e8ff6c5d8e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <label for="mce-EMAIL">Stay tuned by subscribing to our mailing list</label>
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_77729b9eb386bf0c6f7991e88_e8ff6c5d8e" value=""></div>
+  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+        <img src='img/splash.jpg' id='splash'/>
+        
+        <h1><i>
+        Drive social changes by code
+        </i></h1>
+        <nav>
                 <ul>
                     <li><a href='#projects'>Projects</a></li>
                     <li><a href='#contributors'>Contributors</a></li>
@@ -20,11 +47,6 @@
                     <li><a href='#contacts'>Contacts</a></li>
                 <ul>
             </nav>
-		</header>
-        <img src='img/splash.jpg' id='splash'/>
-        <h1><i>
-        Drive social changes by code
-        </i></h1>
         <div id='content'>
             <div id='whole'>
                 <div id='left'>
@@ -64,15 +86,21 @@
             &copy; 2014 All right reserved code4HK
             </div>
         </footer>
-        <script src='lib/angular/angular.js'></script>
-        <script src='lib/angular-route/angular-route.js'></script>
-        <script src='lib/angular-mocks/angular-mocks.js'></script>
-        <script src='lib/angular-bootstrap/ui-bootstrap.js'></script>
-        <script src='lib/angular-ui-utils/ui-utils.js'></script>
-        <script src='js/app.js'></script>
-        <script src='js/services.js'></script>
-        <script src='js/controllers.js'></script>
-        <script src='js/filters.js'></script>
-        <script src='js/directives.js'></script>
-	</body>
+<!--End mc_embed_signup-->
+
+</section>
+<footer>
+    <!-- &copy; 2014 All right reserved code4HK -->
+</footer>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="lib/angular-mocks/angular-mocks.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+<script src="lib/angular-ui-utils/ui-utils.js"></script>
+<script src="js/app.js"></script>
+<script src="js/services.js"></script>
+<script src="js/controllers.js"></script>
+<script src="js/filters.js"></script>
+<script src="js/directives.js"></script>
+</body>
 </html>
