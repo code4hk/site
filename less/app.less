@@ -1,5 +1,7 @@
 @white: #FFFFFF;
 @green: #33ff33;
+@red-tag: #ff9999;
+@orange-tag: #ffff99;
 
 #forkongithub {
     z-index:2;
@@ -45,7 +47,7 @@ header {
 
 .subscribe-section {
 	width: 50%;
-    margin: 0 auto;
+    margin: 2em auto;
 	text-align: center;
 }
 
@@ -174,6 +176,29 @@ footer {
         &.live {
             border-radius: 0.1em;
             background-color: @green;
+        }
+    }
+}
+
+#contributors {
+    .contributorImage {
+        img {
+            width: 20em;
+            height:20em;
+            border-radius:100%;
+        }
+    }
+    .contributorTags {
+        margin: 0.5em;
+        .developer {
+            margin:0.3em;
+            padding: 0.3em;
+            background-color: @red-tag;
+        }
+        .organizer {
+            margin:0.3em;
+            padding: 0.3em;
+            background-color: @orange-tag;
         }
     }
 }
