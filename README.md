@@ -8,16 +8,16 @@ We are a bunch of people who are pushing improvements in social aspect through t
 Installation Guide
 ----
 
-***Install Node Version Manager***
+### Install Node Version Manager
 
 [NVM Website](https://github.com/creationix/nvm)
 
-*2014/01/16 see [issue #334](https://github.com/creationix/nvm/issues/334) if you cannot login in Ubuntu
+   * 2014/01/16 see [issue #334](https://github.com/creationix/nvm/issues/334) if you cannot login in Ubuntu
 
     nvm install v0.10.24
     nvm use 0.10.24
 
-***Install gulp***
+### Install gulp
 
 [gulp website](https://github.com/gulpjs/gulp)
 
@@ -25,3 +25,15 @@ Installation Guide
     cd site
     npm install
     bower install
+
+Start local dev server
+------
+
+   * Start an HTTP server:
+      1. `scripts/web-server.js`
+      2. `python -mSimpleHTTPServer 8001`
+      3. Any other HTTP server to host app folder
+   * Start `gulp`
+   * Install [livereload browser extensions](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+
+Then you can visit the dev website at `http://localhost:8001`.

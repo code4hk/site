@@ -6,7 +6,7 @@ var util = require('util'),
     url = require('url'),
     events = require('events');
 
-var DEFAULT_PORT = 8001;
+var DEFAULT_PORT = 8003;
 var indexFilenamePattern = /index\.html/;
 
 
