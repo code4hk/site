@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
-    <style>#forkongithub a{background:#000;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1.2rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#060;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:absolute;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;}#forkongithub a{width:200px;position:absolute;top:4em;left:-4em;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
+    <style>#code4hk-badge a{background:#000;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1.2rem;line-height:2rem;position:relative;transition:0.5s;}#code4hk-badge a:hover{background:#060;color:#fff;}#code4hk-badge a::before,#code4hk-badge a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#code4hk-badge a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#code4hk-badge{position:absolute;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;}#code4hk-badge a{width:200px;position:absolute;top:4em;left:-4em;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
 </head>
 <body >
-    <span style="" id="forkongithub"><a href="http://www.code4.hk"> Code for Hong Kong </a></span>
+    <span style="" id="code4hk-badge"><a id="code4hk-badge-link" href="http://www.code4.hk"> Code for Hong Kong </a></span>
  <header>
     <img id="logo" src="img/logo.png" alt="code4hk logo"/>
     <h1>The platform for social initiatives in Hong Kong</h1>
@@ -61,7 +61,7 @@
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular-route/angular-route.js"></script>
 <script src="lib/angular-mocks/angular-mocks.js"></script>
-<script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
+<!-- <script src="lib/angular-bootstrap/ui-bootstrap.js"></script> -->
 <script src="lib/angular-ui-utils/ui-utils.js"></script>
 <script src="js/app.js"></script>
 <script src="js/services.js"></script>
@@ -71,6 +71,21 @@
 
 
 <script src="lib/angular-lifestream/dist/scripts/angular-lifestream.min.js"></script>
-<!-- /Users/lauchunyinvincent/Dropbox/code4hk/site/ -->
+
+
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-48536294-2']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    </script>
+
 </body>
 </html>
