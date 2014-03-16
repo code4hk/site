@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="en" ng-app="site">
+<html lang="en" >
 <head>
   <title>Code4HK: We improve Hong Kong by coding.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+
+   <link rel="stylesheet" href="lib/angular-lifestream/style/lifestream.css">
+
   <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
     <style>#code4hk-badge a{background:#000;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1.2rem;line-height:2rem;position:relative;transition:0.5s;}#code4hk-badge a:hover{background:#060;color:#fff;}#code4hk-badge a::before,#code4hk-badge a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#code4hk-badge a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#code4hk-badge{position:absolute;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;}#code4hk-badge a{width:200px;position:absolute;top:4em;left:-4em;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
 </head>
@@ -30,7 +33,14 @@
 <hr />
 <img src='img/splash.jpg' id='splash'/>
 <div id='content'>
+       <section class="lifestream-section">
+          <div ng-controller="lifestreamCtrl">
+              <lifestream config="lifestreamConfig"></lifestream>
+          </div>
+        </section>
+        <hr/>
     <div id='whole'>
+
         <section id="subscribe-box" class="container-fluid subscribe-section" >
             <!-- Begin MailChimp Signup Form -->
             <style type="text/css">
@@ -99,27 +109,25 @@
 
 
 <hr />
-<section>
-  <div ng-controller="lifestreamCtrl">
-      <lifestream config="lifestreamConfig"></lifestream>
-  </div>
-</section>
+
 <footer>
     <!-- &copy; 2014 All right reserved code4HK -->
 </footer>
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular-route/angular-route.js"></script>
+<script src="lib/angular-sanitize/angular-sanitize.js"></script>
 <script src="lib/angular-mocks/angular-mocks.js"></script>
 <!-- <script src="lib/angular-bootstrap/ui-bootstrap.js"></script> -->
 <script src="lib/angular-ui-utils/ui-utils.js"></script>
+
+<script src="lib/angular-lifestream/dist/scripts/angular-lifestream.min.js"></script>
+
 <script src="js/app.js"></script>
 <script src="js/services.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
 
-
-<script src="lib/angular-lifestream/dist/scripts/angular-lifestream.min.js"></script>
 
 
     <script type="text/javascript">
