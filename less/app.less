@@ -1,32 +1,64 @@
+@white: #FFFFFF;
+@green: #33ff33;
+@red-tag: #ff9999;
+@orange-tag: #ffff99;
+
 header {
-h1 {
-font-size:1.5em;
-width: 80%;
-margin: 10px auto;
-text-align:center;
-min-width:240px;
-//        margin-left:50px;
+
+    width: 100%;
+    z-index:1;
+    position: fixed;
+    top:0px;
+    background: @white;
+
+    h1 {
+        font-size:1.3em;
+        width: 40%;
+        margin: 1em auto;
+        text-align:center;
+        min-width:240px;
+    }
+
+    img#logo {
+        display:block;
+        width: 35%;
+        margin: 1em auto;
+        min-width: 218.8px;
+        max-width: 547px;
+    }
+    nav {
+        width: 100%;
+        ul {
+            list-style:none;
+            padding:0;
+            li {
+                width:19%;
+                display:inline-block;
+                text-align: center;
+                margin:0 auto;
+                a {
+                }
+            }
+        }
+    }
 }
 
-img#logo {
-display:block;
-width: 70%;
-margin: 10px auto;
-min-width: 218.8px;
-max-width: 547px;
-}
+.subscribe-section {
+   width: 50%;
+   margin: 2em auto;
+   text-align: center;
 }
 
 
- .blog-section{
-width: 50%;
-margin: 0 auto;
-text-align: center;
- }
+.blog-section{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
 .subscribe-section{
-width: 50%;
-margin: 0 auto;
-text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* MailChimp Form Embed Code - Slim - 08/17/2011 */
@@ -56,15 +88,15 @@ text-align: center;
 
 
 #mc_embed_signup input.email {
-width:100%;
+    width:100%;
 }
 
 .blog-button{
-width:100%;
-font-family: Helvetica, Arial, sans-serif;
-line-height:1em;
+    width:100%;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height:1em;
 }
 
 #mc_embed_signup input.button {
-width:100%;
+    width:100%;
 }
