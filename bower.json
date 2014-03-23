@@ -16,6 +16,8 @@
 		"angular-sanitize": "1.2.*",
 		"angular-ui-utils": "0.1.*",
 		"angular-lifestream":"*"
-
-	}
+	},
+	"resolutions": {
+    "angular": ">=1.2.14"
+  }
 }

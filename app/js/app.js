@@ -3,11 +3,6 @@
 
 // Declare app level module which depends on filters, and services
 
-//wrapper here before built min.js can load modules sync
-//this is almond, not true requirejs
-
-require(["angular-lifestream"], function() {
-
     angular.module('site', [
         'ngRoute',
         // 'ui.bootstrap',
@@ -55,7 +50,3 @@ require(["angular-lifestream"], function() {
         }
     ]);
     angular.bootstrap(document, ["site"]);
-
-
-
-});
