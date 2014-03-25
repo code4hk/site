@@ -1,21 +1,23 @@
 {
-	"name" : "code4hkweb",
-	"version" : "0.1.0",
-	"ignore" : [ 
+	"name": "code4hkweb",
+	"version": "0.1.0",
+	"ignore": [
 		"app/lib/",
-		"**/.*", 
+		"**/.*",
 		"node_modules",
 		"test",
 		"tests"
 	],
 	"dependencies": {
-		"angular" : null,
+		"angular": null,
 		"angular-scenario": "1.2.*",
 		"angular-route": "1.2.*",
 		"angular-mocks": "1.2.*",
-
-        "angular-ui-utils": "0.1.*"
-
-	}
+		"angular-sanitize": "1.2.*",
+		"angular-ui-utils": "0.1.*",
+		"angular-lifestream":"*"
+	},
+	"resolutions": {
+    "angular": ">=1.2.14"
+  }
 }
-
