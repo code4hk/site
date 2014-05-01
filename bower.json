@@ -13,11 +13,8 @@
 		"angular-scenario": "1.2.*",
 		"angular-route": "1.2.*",
 		"angular-mocks": "1.2.*",
-		"angular-sanitize": "1.2.*",
-		"angular-ui-utils": "0.1.*",
-		"angular-lifestream":"*"
-	},
-	"resolutions": {
-    "angular": ">=1.2.14"
-  }
+		"ng-i18next":"0.3.1",
+        "angular-ui-utils": "0.1.*"
+
+	}
 }
