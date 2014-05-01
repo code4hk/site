@@ -3,12 +3,17 @@
 @red-tag: #ff9999;
 @orange-tag: #ffff99;
 
+#code4hk-badge {
+    z-index:2;
+}
+
 header {
 
     width: 100%;
-    z-index:1;
+    /*z-index:0;
     position: fixed;
     top:0px;
+    */
     background: @white;
 
     h1 {
@@ -32,7 +37,7 @@ header {
             list-style:none;
             padding:0;
             li {
-                width:19%;
+                width:49%;
                 display:inline-block;
                 text-align: center;
                 margin:0 auto;
@@ -40,6 +45,13 @@ header {
                 }
             }
         }
+    }
+}
+
+#mission_statement {
+    padding: 5em 0 5em 0;
+    h1 {
+        text-align:center;
     }
 }
 
@@ -105,3 +117,22 @@ header {
 #mc_embed_signup input.button {
     width:100%;
 }
+
+#contacts {
+    text-align: center;
+    ul {
+        padding:0;
+        li {
+            list-style:none;
+            display:inline-block;
+        }
+    }
+}
+
+footer {
+    #copyright {
+        text-align: center;
+        margin: 0 0 2em 0;
+    }
+}
+    
