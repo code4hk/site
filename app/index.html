@@ -15,12 +15,12 @@
     <img id="logo" src="img/logo.png" alt="code4hk logo"/>
     
     <h1><i>
-    Drive social changes by code
+    {{ 'Drive social changes by code' | t}}
     </i></h1>
     <nav>
         <ul>
-            <li><a href='#projects'>Projects</a></li>
-            <li><a href='#contributors'>Contributors</a></li>
+            <li><a href='#projects'>{{'Projects'|t}}</a></li>
+            <li><a href='#contributors'>{{'Contributors'|t}}</a></li>
             <li><a href='#contacts'>Contacts</a></li>
             <li><a href='http://code4hk.github.io/blog/'>Blog</a></li>
             <li><a href='#contacts'>Contacts</a></li>
@@ -94,7 +94,7 @@
 <hr />
 <section class="container-fluid blog-section">
 
-    <div class="clear"><a href="//blog.code4.hk/hackathon/2013/12/01/code-for-hk/" class="btn btn-primary btn-lg blog-button" role="button">Our Blog</a></div>
+    <div class="clear"><a href="//blog.code4.hk/hackathon/2013/12/01/code-for-hk/" class="btn btn-primary btn-lg blog-button" role="button">Our Blog {{Testing | i18next}}</a></div>
 </section>
 
 
@@ -112,14 +112,17 @@
 <script src="lib/angular-mocks/angular-mocks.js"></script>
 <!-- <script src="lib/angular-bootstrap/ui-bootstrap.js"></script> -->
 <script src="lib/angular-ui-utils/ui-utils.js"></script>
+<script src="lib/angular-lifestream/dist/scripts/angular-lifestream.min.js"></script>
+<script src="lib/i18next/i18next.js"></script>
+<script src="lib/ng-i18next/dist/ng-i18next.min.js"></script>
+
+<!-- Application -->
 <script src="js/app.js"></script>
 <script src="js/services.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/filters.js"></script>
 <script src="js/directives.js"></script>
 
-
-<script src="lib/angular-lifestream/dist/scripts/angular-lifestream.min.js"></script>
 
 
     <script type="text/javascript">

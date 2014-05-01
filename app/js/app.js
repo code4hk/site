@@ -8,7 +8,8 @@ angular.module('site', [
     'myApp.filters',
     'myApp.services',
     'myApp.directives',
-    'site.controllers'
+    'site.controllers',
+    'jm.i18next'
 ]).
 config(['$routeProvider',
     function($routeProvider) {
@@ -24,8 +25,30 @@ config(['$routeProvider',
             redirectTo: '/view1'
         });
     }
-]);
+])
+.filter('t',['$i18next',function(i18next){
+    return function(input){
+        return i18next(input);
+    }
+}]);
 
+
+angular.module('jm.i18next')
+.config(['$i18nextProvider',function ($i18nextProvider) {
+    $i18nextProvider.options = {
+        useCookie: false,
+        useLocalStorage: false,
+        load: 'current',
+        fallbackLng: 'zh-TW',
+        resGetPath: '../locales/__lng__/__ns__.json',
+        ns: {
+        namespaces: ['site_main'],
+        defaultNs: 'site_main'
+      }
+    };
+
+    // http://localhost:8005/?setLng=en/
+}]);
 
 angular.module('site.controllers', []).
 controller('lifestreamCtrl', ['$scope',
