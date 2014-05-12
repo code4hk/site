@@ -1,4 +1,17 @@
 {
+    "language": "en",
+    "We improve Hong Kong by coding": "We improve Hong Kong by coding",
     "Drive social changes by code":"Drive social changes by code",
-    "Projects":"Projects"
+    "Projects":"Projects",
+	"Activities":"Activities",
+	"Livestream":"Livestream",
+	"Blog": "Blog",
+	"Contacts": "Contacts",
+	"Open Gov":"Open Gov",
+	"Civic hacking":"Civic hacking",
+	"Open Source":"Open Source",
+	"Stay tuned by subscribing to our mailing list": "Stay tuned by subscribing to our mailing list",
+	"email address" : "email address",
+	"Our Blog" : "Our Blog",
+	"Subscribe" : "Subscribe"
 }

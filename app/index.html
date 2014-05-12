@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en" >
+<html lang="{{ 'language' | t }}" >
 <head>
-  <title>Code4HK: We improve Hong Kong by coding.</title>
+  <title>Code4HK: {{ 'We improve Hong Kong by coding' | t }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Ledger' rel='stylesheet' type='text/css'>
@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" media="all" href="css/app.css" />
     <style>#code4hk-badge a{background:#000;color:#fff;text-decoration:none;font-family:arial, sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1.2rem;line-height:2rem;position:relative;transition:0.5s;}#code4hk-badge a:hover{background:#060;color:#fff;}#code4hk-badge a::before,#code4hk-badge a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#code4hk-badge a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#code4hk-badge{position:absolute;display:block;top:0;left:0;width:200px;overflow:hidden;height:200px;}#code4hk-badge a{width:200px;position:absolute;top:4em;left:-4em;transform:rotate(-45deg);-webkit-transform:rotate(-45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style>
 </head>
-<body >
+<body>
     <span style="" id="code4hk-badge"><a id="code4hk-badge-link" href="http://www.code4.hk"> Code for Hong Kong </a></span>
     <header>
         <img id="logo" src="img/logo.png" alt="code4hk logo"/>
@@ -24,11 +24,16 @@
         <nav>
             <ul>
                 <!--
-                <li><a href='#activities'>{{ 'Activities' | t }}</a></li>
-                <li><a href='#livestream'>{{ 'Livestream' | t }}</a></li>
+                <li><a href='#?scrollTo=activities'>{{ 'Activities' | t }}</a></li>
                 -->
+                <li><a ng-click='goto("livestream")' href='#'>{{ 'Livestream' | t }}</a></li>
                 <li><a href='http://blog.code4.hk/'>{{ 'Blog' | t }}</a></li>
-                <li><a href='#contacts'>{{ 'Contacts' | t }}</a></li>
+                <li><a ng-click='goto("livestream")' href='#'>{{ 'Contacts' | t }}</a></li>
+                <li>
+                    <a href='/?setLng=zh-TW'>中</a>
+                    |
+                    <a href='/?setLng=en'>En</a>
+                </li>
             <ul>
         </nav>
     </header>
@@ -37,8 +42,8 @@
         <h1>{{ 'Open Gov' | t }} &nbsp; &nbsp;{{'Civic hacking' | t }} &nbsp; &nbsp;{{'Open Source' | t }}</h1>
     </section>
 
-    <section class="lifestream-section">
-        <a name='liveStream'></a>
+    <section  class="lifestream-section">
+        <a id='liveStream' name='liveStream'></a>
             <div ng-controller="lifestreamCtrl">
                 <lifestream config="lifestreamConfig"></lifestream>
             </div>
@@ -67,7 +72,7 @@
     <hr />
     <!--End mc_embed_signup-->
     <div id='contacts'>
-        <a name='contacts'></a>
+        <a id='contactsHref' name='contacts'></a>
         <h2>{{ 'Contacts' | t }}</h2>
         <ul>
             <li><a href="https://www.facebook.com/groups/code4hk/"><img src='img/facebook.png' alt='Facebook'/></a></li>
