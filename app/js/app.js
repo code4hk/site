@@ -50,25 +50,26 @@ angular.module('jm.i18next')
     // http://localhost:8005/?setLng=en/
 }]);
 
-    angular.module('site.controllers', ['ngSanitize']).
-    controller('lifestreamCtrl', ['$scope',
-        function($scope) {
+angular.module('site.controllers', ["ngSanitize", "angular-lifestream"]).
+controller('lifestreamCtrl', ['$scope',
+    function($scope) {
 
-            $scope.lifestreamConfig = {
-                theme: "lifestream-light-theme",
-                list: [{
-                    service: "github_org",
-                    user: "code4hk",
-                }, {
-                    service: "twitter",
-                    user: "code4hk"
-                }, {
-                    service: "facebook_page",
-                    user: "code4hk"
-                }]
-            };
+        $scope.lifestreamConfig = {
+            theme: "lifestream-light-theme",
+            list: [{
+                service: "github_org",
+                user: "code4hk",
+            }, {
+                service: "twitter",
+                user: "code4hk"
+            }, {
+                service: "facebook_page",
+                user: "code4hk"
+            }]
+        };
 
 
-        }
-    ]);
-    angular.bootstrap(document, ["site"]);
+    }
+]);
+
+angular.bootstrap(document, ["site"]);
