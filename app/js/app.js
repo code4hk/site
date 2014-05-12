@@ -1,32 +1,19 @@
 'use strict';
 
-
 // Declare app level module which depends on filters, and services
-angular.module('site', [
+var app = angular.module('site', [
     'ngRoute',
     // 'ui.bootstrap',
-    'myApp.filters',
-    'myApp.services',
-    'myApp.directives',
+    'site.filters',
+    'site.services',
+    'site.directives',
     'site.controllers',
     'jm.i18next'
-]).
-config(['$routeProvider',
+]).config(['$routeProvider',
     function($routeProvider) {
-        $routeProvider.when('/view1', {
-            templateUrl: 'partials/partial1.html',
-            controller: 'MyCtrl1'
-        });
-        $routeProvider.when('/view2', {
-            templateUrl: 'partials/partial2.html',
-            controller: 'MyCtrl2'
-        });
-        $routeProvider.otherwise({
-            redirectTo: '/view1'
-        });
+
     }
-])
-.filter('t',['$i18next',function(i18next){
+]).filter('t',['$i18next',function(i18next){
     return function(input){
         return i18next(input);
     }
