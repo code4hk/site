@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-var app = angular.module('site', [
+angular.module('site', [
     'ngRoute',
     // 'ui.bootstrap',
     'site.filters',
@@ -57,6 +57,17 @@ controller('lifestreamCtrl', ['$scope',
 
 
     }
+])
+.controller('ScrollCtrl', ['$scope', '$location', '$anchorScroll',
+    function($scope, $location, $anchorScroll) {
+        $scope.goTo = function(hash) {
+            console.log('hash=' + hash);
+            $location.hash(hash);
+            $anchorScroll();
+        };
+
+    }
 ]);
+
 
 angular.bootstrap(document, ["site"]);

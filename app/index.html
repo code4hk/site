@@ -21,14 +21,14 @@
         <h1>
     {{ 'Drive social changes by code' | t}}
         </h1>
-        <nav>
+        <nav ng-controller='ScrollCtrl'>
             <ul>
                 <!--
                 <li><a href='#?scrollTo=activities'>{{ 'Activities' | t }}</a></li>
                 -->
-                <li><a ng-click='goto("livestream")' href='#'>{{ 'Livestream' | t }}</a></li>
+                <li><a ng-click='goTo("lifeStream")'>{{ 'Lifestream' | t }}</a></li>
                 <li><a href='http://blog.code4.hk/'>{{ 'Blog' | t }}</a></li>
-                <li><a ng-click='goto("livestream")' href='#'>{{ 'Contacts' | t }}</a></li>
+                <li><a ng-click='goTo("contactsHref")'>{{ 'Contacts' | t }}</a></li>
                 <li>
                     <a href='/?setLng=zh-TW'>中</a>
                     |
@@ -42,8 +42,8 @@
         <h1>{{ 'Open Gov' | t }} &nbsp; &nbsp;{{'Civic hacking' | t }} &nbsp; &nbsp;{{'Open Source' | t }}</h1>
     </section>
 
-    <section  class="lifestream-section">
-        <a id='liveStream' name='liveStream'></a>
+    <section ng-controller='ScrollCtrl'  class="lifestream-section">
+        <a id='lifeStream'></a>
             <div ng-controller="lifestreamCtrl">
                 <lifestream config="lifestreamConfig"></lifestream>
             </div>
@@ -71,8 +71,9 @@
     </section>
     <hr />
     <!--End mc_embed_signup-->
-    <div id='contacts'>
-        <a id='contactsHref' name='contacts'></a>
+
+    <div ng-controller='ScrollCtrl' id='contacts'>
+        <a id='contactsHref'></a>
         <h2>{{ 'Contacts' | t }}</h2>
         <ul>
             <li><a href="https://www.facebook.com/groups/code4hk/"><img src='img/facebook.png' alt='Facebook'/></a></li>
