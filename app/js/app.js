@@ -46,12 +46,13 @@ controller('lifestreamCtrl', ['$scope',
             list: [{
                 service: "github_org",
                 user: "code4hk",
-            }, {
-                service: "twitter",
-                user: "code4hk"
-            }, {
-                service: "facebook_page",
-                user: "code4hk"
+            //}, 
+            //{
+            //    service: "twitter",
+            //    user: "code4hk"
+            //}, {
+            //    service: "facebook_page",
+            //    user: "code4hk"
             }]
         };
 
