@@ -14,7 +14,7 @@ var usemin = require('gulp-usemin');
 
 server = lr();
 
-var dist = './dist';
+var dist = 'dist';
 var publicFolder = 'app';
 gulp.task('bower', function() {
   bower()
@@ -24,9 +24,9 @@ gulp.task('bower', function() {
 
 
 var filesToMove = [
-  '/img/*',
-  '/locales/*',
-  '/partials/*'
+  publicFolder + '/*',
+  '!css/**',
+  '!js/**'
 ];
 
 
@@ -47,10 +47,8 @@ gulp.task('build', ['bower', 'usemin'], function() {
     .pipe(less())
     .pipe(gulp.dest(dist + '/css/'));
 
-  gulp.src(filesToMove, {
-      base: publicFolder
-    })
-    .pipe(gulp.dest(dist + '/img/'));
+  gulp.src(filesToMove)
+    .pipe(gulp.dest(dist));
 
 });
 
