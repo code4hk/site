@@ -1,26 +1,26 @@
 {
-	"name": "code4hkweb",
-	"version": "0.1.0",
-	"ignore": [
-		"app/lib/",
-		"**/.*",
-		"node_modules",
-		"test",
-		"tests"
-	],
-	"dependencies": {
-		"angular": null,
-		"angular-scenario": "1.2.*",
-		"angular-route": "1.2.*",
-		"angular-mocks": "1.2.*",
-        "angular-animate": "1.2.*",
-		"ng-i18next":"0.3.1",
-        "angular-sanitize": "1.2.*",
-        "angular-ui-utils": "0.1.*",
-        "angular-lifestream":"*"
+  "name": "code4hkweb",
+  "version": "0.1.0",
+  "ignore": [
+    "app/lib/",
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": null,
+    "angular-scenario": "*",
+    "angular-route": "*",
+    "angular-mocks": "*",
+    "angular-animate": "*",
+    "ng-i18next": "0.3.1",
+    "angular-sanitize": "*",
+    "angular-ui-utils": "0.1.*",
+    "angular-lifestream": "*"
 
-	},
-    "resolutions": {
-        "angular": ">=1.2.14"
-    }
+  },
+  "resolutions": {
+    "angular": ">=1.2.14"
+  }
 }
