@@ -37,7 +37,9 @@
     "gulp-concat": "2.1.*",
     "tiny-lr": "~0.0.5",
     "gulp-bower": "0.0.2",
-    "gulp-gh-pages": "*"
+    "gulp-gh-pages": "*",
+    "gulp-minify-css": "*",
+    "gulp-usemin": "*"
   },
   "bugs": {
     "url": "https://github.com/code4hk/site/issues"

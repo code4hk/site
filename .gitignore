@@ -10,5 +10,7 @@ app/lib/
 node_modules/
 bower_components/
 
+dist/*
+
 ## Vagrant
 .vagrant/

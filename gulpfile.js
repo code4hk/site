@@ -9,19 +9,48 @@ var concat = require('gulp-concat');
 var less = require('gulp-less');
 var bower = require('gulp-bower');
 var deploy = require('gulp-gh-pages');
+var minifyCss = require('gulp-minify-css');
+var usemin = require('gulp-usemin');
 
 server = lr();
 
+var dist = './dist';
+var publicFolder = 'app';
 gulp.task('bower', function() {
-
   bower()
     .pipe(gulp.dest('app/lib/'));
 
 });
-gulp.task('build', ['bower'], function() {
+
+
+var filesToMove = [
+  '/img/*',
+  '/locales/*',
+  '/partials/*'
+];
+
+
+gulp.task('usemin', function() {
+  gulp.src(publicFolder + '/index.html')
+    .pipe(usemin({
+      css: [minifyCss(), 'concat'],
+      js: [uglify()]
+        // in this case css will be only concatenated (like css: ['concat']).
+    }))
+    .pipe(gulp.dest(dist));
+});
+
+
+gulp.task('build', ['bower', 'usemin'], function() {
+
   gulp.src('less/*.less')
     .pipe(less())
-    .pipe(gulp.dest('app/css/'));
+    .pipe(gulp.dest(dist + '/css/'));
+
+  gulp.src(filesToMove, {
+      base: publicFolder
+    })
+    .pipe(gulp.dest(dist + '/img/'));
 
 });
 
@@ -37,6 +66,7 @@ gulp.task('default', ['bower', 'listen'], function() {
     .pipe(livereload(server));
 });
 
+
 gulp.task('listen', function(next) {
   server.listen(35729, function(err) {
     if (err) return console.error(err);
@@ -48,7 +78,7 @@ var deployOptions = {
   origin: "upstream"
 };
 
-gulp.task('deploy', function() {
+gulp.task('deploy', ['build', 'usemin'], function() {
   return gulp.src('./dist/**/*')
     .pipe(deploy(deployOptions));
 });
