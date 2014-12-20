@@ -75,6 +75,7 @@ gulp.task('listen', function(next) {
 });
 
 var deployOptions = {
+  remoteUrl: "git@github.com:code4hk/site.git",
   origin: "upstream"
 };
 
