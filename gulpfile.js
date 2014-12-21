@@ -24,7 +24,7 @@ gulp.task('bower', function() {
 
 
 var filesToMove = [
-  'app/*',
+  'app/**/*',
   '!app/css/**',
   '!app/js/**',
   '!app/index.html',
