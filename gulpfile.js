@@ -11,7 +11,7 @@ var bower = require('gulp-bower');
 var deploy = require('gulp-gh-pages');
 var minifyCss = require('gulp-minify-css');
 var usemin = require('gulp-usemin');
-
+var markdown = require('gulp-markdown');
 server = lr();
 
 var dist = 'dist';
@@ -30,6 +30,12 @@ var filesToMove = [
   '!app/index.html',
 ];
 
+gulp.task('content', function() {
+  // markdown
+  gulp.src("app/contents/**/*")
+    .pipe(markdown())
+    .pipe(gulp.dest("app/partials"));
+})
 
 gulp.task('usemin', function() {
   gulp.src(publicFolder + '/index.html')
@@ -42,7 +48,7 @@ gulp.task('usemin', function() {
 });
 
 
-gulp.task('build', ['bower', 'usemin'], function() {
+gulp.task('build', ['bower', 'usemin', 'content'], function() {
 
   gulp.src('less/*.less')
     .pipe(less())
@@ -53,7 +59,16 @@ gulp.task('build', ['bower', 'usemin'], function() {
 
 });
 
-gulp.task('default', ['bower', 'listen'], function() {
+
+// gulp.task('less', function() {
+//   gulp.src('less/*.less')
+//     .pipe(watch())
+//     .pipe(less())
+//     .pipe(gulp.dest('app/css/'))
+// });
+
+
+gulp.task('default', ['bower', 'listen', 'content'], function() {
   gulp.src('app/*')
     .pipe(watch())
     .pipe(livereload(server));

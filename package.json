@@ -39,7 +39,8 @@
     "gulp-bower": "0.0.2",
     "gulp-gh-pages": "*",
     "gulp-minify-css": "*",
-    "gulp-usemin": "*"
+    "gulp-usemin": "*",
+    "gulp-markdown": "*"
   },
   "bugs": {
     "url": "https://github.com/code4hk/site/issues"
