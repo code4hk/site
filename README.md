@@ -1,3 +1,8 @@
+CODE4HK site repo is now [here](https://github.com/code4hk/www.code4.hk)
+====
+This is Deprecated
+====
+
 Code 4 HK
 ====
 
